@@ -18,7 +18,7 @@ st.markdown("Dados: Consumidor.gov.br | Jan/2023 – Jul/2025")
 # =========================
 # CARREGAR DADOS
 # =========================
-PASTA = os.path.dirname(os.path.abspath(__file__))  # ✅ corrigido
+PASTA = os.path.dirname(os.path.abspath(__file__))
 
 @st.cache_data
 def carregar_dados():
@@ -186,4 +186,4 @@ with col_j:
 st.markdown("---")
 st.subheader("📄 Amostra Analisada pela IA")
 cols = [c for c in ["assunto", "problema", "resumo_ia", "categoria_ia", "sentimento_ia", "urgencia_ia"] if c in df_ia.columns]
-st.dataframe(df_ia[cols], width='stretch')  # ✅ corrigido
+st.dataframe(df_ia[cols], width='stretch')
